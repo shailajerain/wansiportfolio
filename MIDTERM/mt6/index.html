@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display CSS </title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
+            margin-top: 50px;
+            display: flex;            
+            justify-content: center;   
+            align-items: center;             
+        }
+
+        fieldset {
+            width: 500px;              
+            border-radius: 20px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .block-input {
+            display: block;   
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box; 
+        }
+
+        .inline-text {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70%;
+            font-size: 14px;
+        }
+
+        .inline-btn {
+            padding: 5px 15px;
+        }
+
+        .google-logo {
+            display: block;
+            width: 200px;
+            margin: 20px auto 10px;
+        }
+
+        .google-search {
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid #dfe1e5;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        
+        .signup h3, .ride h3 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .signup input, .ride input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .signup button {
+            width: 100%; 
+            padding: 12px;
+            background: royalblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .signup button:hover { background-color: #3f51b5; }
+
+        .ride button {
+            padding: 10px 20px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .black-btn { background: #000; color: white; }
+        .gray-btn { background: #e0e0e0; color: #0a0909; }
+
+        .black-btn:hover { background: #333; }
+        .gray-btn:hover { background: #6d6b6b; }
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <div class="container">
+            <input type="text" placeholder="Name" class="block-input">
+            <input type="email" placeholder="Email" class="block-input">
+
+            <div style="text-align: center; margin-bottom: 20px;">
+                <p class="inline-text">
+                    Thanks for chatting with our customer support.
+                    Would you like to take our quick survey?
+                </p>
+                <button class="inline-btn">Yes</button>
+                <button class="inline-btn">No</button>
+            </div>
+
+            <div style="text-align: center;">
+                <img src="google.png" alt="Google" class="google-logo">
+                <input type="text" placeholder="Search Google or type a URL" class="google-search"> 
+            </div>
+
+            <div class="signup">
+                <h3>Sign Up</h3>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="email" placeholder="Email">
+                <button type="button">Sign Up</button>
+            </div>
+
+            <div class="ride">
+                <h3>Request a ride now</h3>
+                <input type="text" placeholder="Enter pickup location">
+                <input type="text" placeholder="Enter destination">
+
+                <button type="button" class="black-btn">Request now</button>
+                <button type="button" class="gray-btn">Schedule for later</button>
+            </div>
+        </div>
+    </fieldset>
+
+</body>
+</html>

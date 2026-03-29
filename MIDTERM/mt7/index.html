@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Semantic</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow : hidden;      
+        }
+
+        #navbar li {
+            float: left;
+        }
+
+        #navbar li a:hover {
+            background-color: beige;
+            color: black;
+        }
+
+        #navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            text-decoration: none;
+        }
+
+        header{
+            padding: 10px;
+            height: 100px;
+            text-align: center;
+            background-color: lightslategray;
+            color: black;
+        }
+        nav{
+            background-color: darkslategray;
+            height: 50px;
+        }
+        main{
+            background-color: whitesmoke;
+            height: auto;
+        }
+        aside{
+            background-color: rgb(255, 255, 255);
+            width: 30%;
+            float: left;
+            margin: 0px;
+            padding: 20px;
+
+        }
+       section, article{
+            background-color: rgb(255, 255, 255);
+            width: 30%;
+            float: left;
+            margin: 0px;
+            height: auto;
+            padding: 20px;    
+       }
+        
+        footer{
+            padding: 10px;
+            background-color: lightslategray;
+            color: black;
+            height: 100px;
+            clear: both;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+
+    @media screen and (max-width: 600px)
+    {
+        aside, section, article
+    {
+        width: 100%;
+    }
+    }
+    </style>
+</head>
+<body>
+   <header id = "header">
+      <h1>Header</h1>
+   </header>
+
+    <nav id = "navbar">
+        <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#news">News</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+     <Main id = "main">
+
+     <Aside id = "aside">
+                <h2>Aside </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem molestias porro, distinctio fuga perferendis blanditiis pariatur ullam quasi voluptatibus, commodi veritatis maiores cum laboriosam, alias labore neque nesciunt laudantium vitae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis culpa, ex in, impedit quam animi odio quo eligendi fuga nostrum dolorum incidunt accusantium corporis optio. Necessitatibus veritatis ipsum doloribus eligendi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis ipsum, vel officia modi laboriosam rerum tempora earum nesciunt cupiditate perferendis, maiores reprehenderit rem doloribus ea sunt iure non repellendus.</p>
+            </aside>
+
+    <Section id = "section">
+                <h2>Section </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis illum, delectus inventore quibusdam nostrum facilis mollitia cum, ducimus deserunt ipsa. Consectetur nulla perspiciatis cupiditate nam delectus ad culpa consequatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur nemo. Laudantium explicabo autem nihil, iusto sunt necessitatibus maxime, aperiam labore officia molestiae dolorem reprehenderit eligendi nulla quas, atque vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugiat mollitia accusantium saepe culpa laboriosam, delectus exercitationem laudantium sed. Provident, tenetur rem! Nam sapiente laudantium necessitatibus, architecto fugit dolores cupiditate.</p>
+            </section>
+
+    <Article id = "article">
+                <h2>Article</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis illum, delectus inventore quibusdam nostrum facilis mollitia cum, ducimus deserunt ipsa. Consectetur nulla perspiciatis cupiditate nam delectus ad culpa consequatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure quo corrupti, at quibusdam dicta quia facilis eius non voluptatum autem tempora cupiditate aliquam quis numquam harum veniam fugiat consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, porro veniam qui ab iure, a assumenda eligendi laborum dolores pariatur, commodi expedita ex vel beatae aspernatur corrupti quos numquam aliquam?</p>
+            </article>
+    
+     </Main>
+    <Footer id = "footer">
+            <h1>Footer</h1>
+        </footer>
+</body>
+</html>

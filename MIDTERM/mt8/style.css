@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.theme-1 header, .theme-1 main, .theme-1 footer,
+.theme-2 header, .theme-2 main, .theme-2 footer,
+.theme-3 header, .theme-3 main, .theme-3 footer,
+.theme-4 header, .theme-4 main, .theme-4 footer {
+  width: 75%;
+  margin: 0 auto;
+}
+
+body.theme-1{
+    background-color: lightpink; 
+    padding: 40px 0;
+}
+
+.theme-1 header {
+    background-color: deeppink;
+    color: azure;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.theme-1 main {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.theme-1 nav {
+  width: 25%;
+  float: left;
+}
+
+.theme-1 nav li {
+  background: mistyrose;
+  padding: 10px;
+  margin-bottom: 3px;
+  border: 1px solid pink;
+  cursor: pointer;
+  list-style: none;
+}
+
+.theme-1 nav li.active, 
+.theme-1 nav li:hover {
+  background: mediumvioletred;
+  color: white;
+}
+
+.theme-1 section {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+
+.theme-1 aside {
+  width: 25%;
+  float: left;
+  background: hotpink;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.theme-1 footer {
+  clear: both;
+  background: mistyrose;
+  padding: 15px;
+  text-align: center;
+}
+
+body.theme-2 {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.theme-2 header {
+  background-color: darkred;
+  color: white;
+  padding: 40px 20px;
+}
+
+.theme-2 main {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.theme-2 nav {
+  float: right;
+  width: 180px;
+}
+
+.theme-2 nav li {
+  background: maroon;
+  color: white;
+  border-radius: 20px;
+  padding: 8px;
+  margin-bottom: 12px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.theme-2 section {
+  float: left;
+  width: calc(100% - 220px);
+}
+
+.theme-2 aside {
+  clear: both;
+  background: oldlace;
+  color: maroon;
+  padding: 20px;
+}
+
+.theme-2 footer {
+  background: darkred;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body.theme-3 {
+  background-color: aliceblue;
+  padding: 40px 0;
+}
+
+.theme-3 header h1 {
+  color: navy;
+  font-size: 2.8em;
+}
+
+.theme-3 nav ul {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-3 nav li {
+  flex: 1;
+  background: midnightblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.theme-3 nav li.active {
+  background: goldenrod;
+}
+
+.theme-3 aside {
+  background: #f0f4f8;
+  border: 1px solid lightsteelblue;
+  padding: 20px;
+}
+
+body.theme-4 {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Courier New", monospace;
+}
+
+.theme-4 header, .theme-4 main, .theme-4 footer {
+  background: #0f0f0f;
+  padding: 20px 40px;
+}
+
+.theme-4 main {
+  display: grid;
+  grid-template-areas: "nav aside" "section section";
+  grid-template-columns: 1fr 340px;
+  gap: 30px;
+}
+
+.theme-4 nav {
+  grid-area: nav;
+}
+
+.theme-4 aside {
+  grid-area: aside;
+  border: 1px solid limegreen;
+  padding: 20px;
+}
+
+.theme-4 section {
+  grid-area: section;
+}
+
+@media screen and (max-width: 800px) {
+  .theme-1 header, .theme-1 main, .theme-1 footer,
+  .theme-2 header, .theme-2 main, .theme-2 footer,
+  .theme-3 header, .theme-3 main, .theme-3 footer,
+  .theme-4 header, .theme-4 main, .theme-4 footer {
+    width: 95%;
+  }
+
+  .theme-1 nav, .theme-1 section, .theme-1 aside,
+  .theme-2 nav, .theme-2 section,
+  .theme-3 nav ul {
+    width: 100% !important;
+    float: none !important;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .theme-4 main {
+    grid-template-areas: "nav" "aside" "section";
+    grid-template-columns: 1fr;
+  }
+}
