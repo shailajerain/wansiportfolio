@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+    padding:30px;
+}
+
+.layout-box{
+    background:#e9e9e9;
+    padding:30px;
+    margin-bottom:50px;
+    border-radius:5px;
+    border-color: white;
+}
+
+.box{
+    color:white;
+    padding:15px;
+    border:2px solid white;
+    font-size:14px;
+}
+
+.green{
+    background:#1f9d55;
+}
+
+.purple{
+    background:#660669;
+    border-color: rgb(184, 202, 19);
+}
+
+.salmon{
+    background:rgb(253, 99, 43);
+}
+
+.teal{
+    background:rgb(6, 133, 90);
+}
+
+.blue{
+    background:#0c3bf8;
+}
+
+.darkgreen{
+    background:#032e12;
+}
+
+.card-custom{
+    border:none;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card-custom:hover{
+    transform:translateY(-5px);
+}
+
+.btn-custom{
+    background:#1aabbe;
+    color:rgb(7, 7, 7);
+    border:none;
+}
+
+.btn-custom:hover{
+    background:#00a2b4;
+}
+
+.title{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h4 class="mb-4">Layout 1</h4>
+    <div class="layout-box">
+
+        <div class="row g-0 mb-4">
+            <div class="col-md-6 col-12 box green">
+                50% desktop, 100% mobile
+            </div>
+
+            <div class="col-md-6 col-12 box green">
+                50% desktop, 100% mobile
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-md-6 col-12 box purple">
+                50% desktop, 100% mobile
+            </div>
+
+            <div class="col-md-6 col-12 box purple">
+                50% desktop, 100% mobile
+            </div>
+        </div>
+
+    </div>
+
+    <h4 class="mb-4">Layout 2</h4>
+
+    <div class="layout-box">
+
+        <div class="row mb-4">
+            <div class="col-md-6 col-12 box salmon">
+                Column 1
+            </div>
+
+            <div class="col-md-3 col-12 box salmon">
+                Column 2
+            </div>
+
+            <div class="col-md-3 col-12 box salmon">
+                Column 3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 box teal">
+                Column 1
+            </div>
+
+            <div class="col-12 box teal">
+                Column 2
+            </div>
+
+            <div class="col-12 box teal">
+                Column 3
+            </div>
+        </div>
+
+    </div>
+
+    <h4 class="mb-4">Layout 3</h4>
+
+    <div class="layout-box">
+
+        <div class="row mb-4">
+            <div class="col-md-3 col-12 box blue">
+                Column 1
+            </div>
+
+            <div class="col-md-9 col-12 box blue">
+                Column 2
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 box darkgreen">
+                Column 1
+            </div>
+
+            <div class="col-12 box darkgreen">
+                Column 2
+            </div>
+        </div>
+
+    </div>
+
+    <h4 class="mb-4">
+        Layout 4. Using an External CSS
+    </h4>
+
+    <div class="layout-box">
+
+        <h3 class="text-primary fw-bold mb-4">
+            Bootstrap Grid Responsive
+        </h3>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card p-3 card-custom h-100">
+
+                    <h2 class="text-primary fw-bold">
+                        01
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda delectus sunt facere doloribus.
+                    </p>
+
+                    <button class="btn btn-custom">
+                        Read More
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card p-3 card-custom h-100">
+
+                    <h2 class="text-primary fw-bold">
+                        02
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam tempora explicabo nihil maiores.
+                    </p>
+
+                    <button class="btn btn-custom">
+                        Read More
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card p-3 card-custom h-100">
+
+                    <h2 class="text-primary fw-bold">
+                        03
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam consequuntur asperiores.
+                    </p>
+
+                    <button class="btn btn-custom">
+                        Read More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
